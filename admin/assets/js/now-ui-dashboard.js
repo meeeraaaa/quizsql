@@ -1,25 +1,9 @@
-/*!
 
- =========================================================
- * Now UI Dashboard - v1.1.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
 
 (function() {
-  isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
+  const isWindows = navigator.userAgent.indexOf('Win') > -1;
 
   if (isWindows) {
-    // if we are on windows OS we activate the perfectScrollbar function
     $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
     $('html').addClass('perfect-scrollbar-on');
